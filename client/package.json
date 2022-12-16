@@ -1,9 +1,12 @@
 {
+  "homepage": "https://mairefat.github.io/Web-3.0-Blockchain-App/",
   "name": "client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -11,6 +14,7 @@
   "dependencies": {
     "@iconify/icons-bi": "^1.2.13",
     "ethers": "^5.7.2",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1"
